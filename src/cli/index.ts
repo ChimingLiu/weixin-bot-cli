@@ -3,6 +3,7 @@ import { loginCommand } from "./commands/login.js";
 import { sendCommand } from "./commands/send.js";
 import { listenCommand } from "./commands/listen.js";
 import { replCommand } from "./commands/repl.js";
+import { approveCommand } from "./commands/approve.js";
 
 const program = new Command();
 
@@ -17,5 +18,6 @@ program.addCommand(loginCommand);
 program.addCommand(sendCommand);
 program.addCommand(listenCommand);
 program.addCommand(replCommand);
+program.addCommand(approveCommand);
 
 program.parse();
